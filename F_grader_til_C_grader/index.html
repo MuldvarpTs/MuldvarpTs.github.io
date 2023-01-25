@@ -1,0 +1,76 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Farenheit to Celsius Calculator</title>
+  </head>
+  <body>
+
+    <div id="container">
+      <h1>Farenheit to Celsius Calculator</h1>
+      <input type="text" id="farenheit" placeholder="Enter Farenheit Value" />
+      <input type="button" id="convert" value="Convert" onclick="calculate()" />
+      <p id="result"></p>
+    </div>
+
+    <script>
+      function calculate() {
+        var farenheit = document.getElementById('farenheit').value;
+        var celsius = (farenheit - 32) * 5/9;
+        document.getElementById('result').innerHTML = celsius + ' Celsius';
+      }
+    </script>
+    
+
+  </body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Temperature Converter</h1>
+    <div class="input-group">
+      <label for="farenheit">Farenheit</label>
+      <input type="text" id="farenheit">
+    </div>
+    <div class="input-group">
+      <label for="celsius">Celsius</label>
+      <input type="text" id="celsius">
+    </div>
+    <button class="btn" id="convert">Convert</button>
+    <button class="btn" onclick="window.location.reload();">Reload</button>
+    <div class="output" id="output"></div>
+  </div>
+  <script>
+    const farenheitInput = document.getElementById("farenheit");
+    const celsiusInput = document.getElementById("celsius");
+    const convertBtn = document.getElementById("convert");
+    const output = document.getElementById("output");
+
+    convertBtn.addEventListener("click", function() {
+      // convert farenheit to celsius
+      if (farenheitInput.value !== "") {
+        let celsius = (farenheitInput.value - 32) * (5 / 9);
+        celsiusInput.value = celsius.toFixed(2);
+        output.innerHTML = `${farenheitInput.value}&deg;F is equal to ${celsius.toFixed(2)}&deg;C`;
+      }
+      // convert celsius to farenheit
+      else if (celsiusInput.value !== "") {
+        let farenheit = (celsiusInput.value * 9 / 5) + 32;
+        farenheitInput.value = farenheit.toFixed(2);
+        output.innerHTML = `${celsiusInput.value}&deg;C is equal to ${farenheit.toFixed(2)}&deg;F`;
+      }
+    });
+  </script>
+</body>
+</html>
