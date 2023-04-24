@@ -1,0 +1,148 @@
+/* Set up some basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  /* Style the header and navigation */
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    max-width: 10%;
+  }
+  
+  .cart img {
+    width: 10%;
+  }
+  
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .logo {
+    margin: 0;
+  }
+  
+  .hamburger-menu {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  /* Style the search and cart section */
+  .search-cart {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search {
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    margin-right: 10px;
+    width: 200px;
+  }
+  
+  .search-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .cart img {
+    width: 30px;
+  }
+  
+  /* Style the product section */
+  .product-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+  }
+  
+  .product-images img {
+    width: 300px;
+  }
+  
+  .product-info {
+    width: 50%;
+  }
+  
+  .product-info h1 {
+    margin-top: 0;
+  }
+  
+  .product-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .product-info ul li {
+    margin: 5px 0;
+  }
+  
+  .product-info ul li strong {
+    margin-right: 10px;
+  }
+  
+  .product-description {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  button {
+    background-color: #af4c4c; /* Red background color */
+    border: none; /* Remove borders */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Add padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline from link */
+    display: inline-block; /* Display as inline block */
+    font-size: 16px; /* Set font size */
+    margin: 10px; /* Add margin */
+  }
+  
+  button:hover {
+    opacity: 0.8; /* Add transparency on hover */
+  }
+  
+  button a {
+    color: white; /* White text color for link */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  button p {
+    margin: 0; /* Remove margin from paragraph */
+  }
+  
+  
