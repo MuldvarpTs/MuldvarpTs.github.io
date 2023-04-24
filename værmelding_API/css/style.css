@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #weather {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  li {
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 5px;
+  }
+  li:hover{
+    background-color: darkgray;
+  }
+  
+
+
+  select{
+    display: flex;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: lightgray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  select:hover{
+    background-color: darkgray;
+  }
+
+
+  
+  .days-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .day {
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    background-color: lightgray;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .day h3 {
+    margin: 0;
+  }
+  
+  .hours-container {
+    display: none;
+  }
+  
+  .hour {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: lightblue;
+    cursor: pointer;
+  }
+  
+  .hour h4 {
+    margin: 0;
+  }
+  
+  .day.active .hours-container {
+    display: block;
+  }
+
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  li {
+    margin-bottom: 1rem;
+  }
+  
+  li p {
+    margin-bottom: 0.5rem;
+  }
+  
+
+
+
+
+
